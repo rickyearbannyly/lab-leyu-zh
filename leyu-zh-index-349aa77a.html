@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于 leyu – 信息整理与说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #f2f4f8;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif;
+            line-height: 1.7;
+            color: #1e1e2a;
+            padding: 0 0 3.5rem 0;
+        }
+        .hero {
+            background: #1a1c2e;
+            color: #e5e7f0;
+            padding: 3.8rem 1.8rem;
+            text-align: center;
+            border-bottom: 6px solid #4f6f8f;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            margin-bottom: 0.6rem;
+            color: #d9e2f0;
+        }
+        .hero p {
+            max-width: 640px;
+            margin: 0.6rem auto 0;
+            font-size: 1.1rem;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+        .wrapper {
+            max-width: 860px;
+            margin: 2.5rem auto 0;
+            padding: 0 1.6rem;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 28px;
+            padding: 2.6rem 2.8rem;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+            margin-bottom: 2.2rem;
+        }
+        .card h2 {
+            font-size: 1.7rem;
+            font-weight: 450;
+            margin: 1.2rem 0 0.8rem 0;
+            border-left: 5px solid #4f6f8f;
+            padding-left: 1rem;
+            color: #202336;
+        }
+        .card h2:first-child {
+            margin-top: 0;
+        }
+        .card p {
+            margin: 1rem 0;
+            font-size: 1.025rem;
+            color: #2e3040;
+        }
+        .card blockquote {
+            margin: 1.8rem 0 1.8rem 1.2rem;
+            padding: 0.8rem 1.4rem;
+            border-left: 6px solid #6c8aa6;
+            background: #f0f3f9;
+            color: #1f2b3a;
+            font-style: normal;
+            border-radius: 0 18px 18px 0;
+            font-size: 1rem;
+        }
+        .card blockquote p {
+            margin: 0.2rem 0;
+        }
+        .card a {
+            color: #2a6396;
+            text-decoration: none;
+            border-bottom: 1px dotted #2a6396;
+            font-weight: 500;
+            transition: border 0.2s, background 0.2s;
+        }
+        .card a:hover {
+            border-bottom: 2px solid #1b4770;
+            background: #eef3fa;
+            padding: 0.1rem 0.2rem;
+            border-radius: 4px;
+        }
+        .highlight-link {
+            color: #1e4f7a;
+            font-weight: 500;
+        }
+        .note-box {
+            background: #e8ecf5;
+            border-radius: 40px;
+            padding: 1.6rem 2.2rem;
+            margin: 2.2rem 0 1rem;
+            border: 1px solid #d2daea;
+        }
+        .note-box p {
+            margin: 0.3rem 0;
+        }
+        .faq-mini {
+            margin-top: 1.8rem;
+            border-top: 1px solid #dce2ee;
+            padding-top: 1.4rem;
+        }
+        .faq-mini dt {
+            font-weight: 550;
+            margin: 1rem 0 0.3rem 0;
+            color: #1d2b3e;
+        }
+        .faq-mini dd {
+            margin-left: 1.2rem;
+            color: #354558;
+            padding-bottom: 0.6rem;
+        }
+        .scene-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.4rem;
+            margin: 1.4rem 0 0.8rem;
+        }
+        .scene-item {
+            background: #f7f9fe;
+            flex: 1 1 160px;
+            padding: 0.9rem 1.2rem;
+            border-radius: 30px;
+            border: 1px solid #dfe6f0;
+            font-size: 0.98rem;
+            color: #1d293b;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+        .scene-item strong {
+            display: block;
+            font-weight: 550;
+            margin-bottom: 0.2rem;
+        }
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .card {
+                padding: 1.8rem 1.4rem;
+                border-radius: 24px;
+            }
+            .card h2 {
+                font-size: 1.4rem;
+            }
+            .scene-grid {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+        }
+        .footer-note {
+            text-align: center;
+            margin: 2.8rem auto 0;
+            font-size: 0.9rem;
+            color: #5a6479;
+            border-top: 1px solid #d2d9e6;
+            padding-top: 2rem;
+            max-width: 700px;
+        }
+        .footer-note a {
+            color: #2a6396;
+            border-bottom: 1px dotted #7c94b0;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>关于 leyu · 主题整理</h1>
+        <p>一份简明、平实的说明页，基于日常观察与信息梳理</p>
+    </div>
+
+    <div class="wrapper">
+
+        <div class="card">
+
+            <h2>从关键词到内容主线</h2>
+            <p>“leyu” 这个简短的名字，常常让人联想到信息聚合、资源查找或内容发现。在许多语境下，它指向一个集中提供多种条目和分类整理的平台。无论是工具型内容、资讯索引，还是特定领域的知识汇编，<a href="https://leyu-zh.com">leyu</a> 代表的往往是一类结构化的信息入口。这篇页面尝试从实际使用角度，整理它与主题内容之间的关系。</p>
+
+            <blockquote>
+                <p>“一个好的索引，不是把东西藏起来，而是让人知道去哪里找。” —— 引自一篇关于信息组织的笔记</p>
+            </blockquote>
+
+            <h2>内容特点与常见场景</h2>
+            <p>根据可观察到的页面结构，leyu 所涉及的内容通常具有以下特点：分类清晰、更新稳定，并且注重不同板块之间的跳转逻辑。使用者在查找某一具体条目时，往往可以先通过分类导航缩小范围，再快速定位到具体条目。这种组织方式在以下场景中尤为常见：</p>
+
+            <div class="scene-grid">
+                <div class="scene-item"><strong>日常浏览</strong>快速浏览分类，发现感兴趣的主题或更新条目</div>
+                <div class="scene-item"><strong>专题查找</strong>根据固定关键词或类别，找到集中整理的条目列表</div>
+                <div class="scene-item"><strong>信息回溯</strong>返回查看之前关注的板块是否有新增或变动</div>
+                <div class="scene-item"><strong>横向比较</strong>在同一类别下对比不同条目的特点或差异</div>
+            </div>
+
+            <p>以上场景并不特殊，但胜在实用。一个长期维护的内容索引，能帮助使用者节省反复搜索的时间，避免信息碎片化。leyu 在这方面的定位比较明确：提供结构清晰的条目集合，并保持可访问性。</p>
+
+            <h2>值得留意的几点</h2>
+            <p>在使用类似索引类页面时，有几点可以稍加留意：</p>
+            <ul style="margin-left: 1.6rem; margin-top: 0.4rem; color: #2a3b52;">
+                <li>内容的更新频率和最近一次更新日期，这直接关系到信息的时效性。</li>
+                <li>条目描述是否准确，有时简短的说明比标题更能反映实际内容。</li>
+                <li>链接的有效性——定期维护的索引一般会及时处理失效链接，把这当作一个判断依据也不错。</li>
+            </ul>
+
+            <div class="note-box">
+                <p><strong>提示</strong> 如果你正在寻找某个特定方向的条目，先试着在分类中找到最接近的标签，再逐条浏览。直接搜索关键词虽然快，但分类浏览有时能发现意料之外的关联内容。</p>
+            </div>
+
+            <h2>FAQ 摘要 —— 常见疑问简答</h2>
+            <dl class="faq-mini">
+                <dt>问：leyu 的内容偏向哪个领域？</dt>
+                <dd>答：从现有板块看，涵盖多种实用信息与资源整理，并不局限于单一垂直领域，综合性较强。</dd>
+                <dt>问：是否需要注册或登录才能浏览？</dt>
+                <dd>答：大部分分类和条目可以直接访问，具体以页面实际提示为准。</dd>
+                <dt>问：内容组织形式会变动吗？</dt>
+                <dd>答：索引类页面有时会优化分类结构，但通常会有相应的导航引导，适应起来并不困难。</dd>
+            </dl>
+
+            <p style="margin-top: 1.8rem;">如果你对某个具体条目或分类有进一步的疑问，不妨直接访问 <a href="https://leyu-zh.com">leyu</a> 首页，从顶部导航或最新更新列表开始着手。保持浏览习惯，慢慢就能熟悉整体的布局逻辑。</p>
+
+        </div>
+
+        <div class="footer-note">
+            <p>基于公开信息整理 · 内容仅供参考 · 页面仅做说明用途</p>
+            <p style="margin-top: 0.2rem;"><a href="https://leyu-zh.com">leyu</a> – 索引与内容组织</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
